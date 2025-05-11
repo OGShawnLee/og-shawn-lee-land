@@ -1,19 +1,24 @@
 <script>
 	import { Technology } from "$lib/components";
+
+	const APP_SITE_NAME = "Shawn Lee - Software Engineer";
+	const APP_URL = "https://lee-shawn-land.vercel.com";
 </script>
 
 <svelte:head>
-	<title>Shawn Lee - Software Engineer</title>
+	<title>{APP_SITE_NAME}</title>
 	<meta name="description" content="Shawn Lee's personal website. Software Engineer." />
 	<meta
 		name="keywords"
 		content="Shawn Lee, Software Engineer, Web Developer, Programming, Technology, Open Source"
 	/>
 	<meta name="author" content="Shawn Lee" />
-	<meta property="og:title" content="Shawn Lee - Software Engineer" />
+	<meta property="og:title" content={APP_SITE_NAME} />
+	<meta property="og:site_name" content={APP_SITE_NAME} />
 	<meta property="og:description" content="Shawn Lee's personal website. Software Engineer." />
 	<meta property="og:type" content="website" />
-	<!-- TODO: <meta property="og:url" content="https://yourwebsite.com" /> -->
+	<meta property="og:url" content={APP_URL} />
+	<meta property="og:locale" content="en_US" />
 	<!-- TODO: <meta property="og:image" content="https://yourwebsite.com/og-image.jpg" /> -->
 	<!-- TODO: <meta name="twitter:card" content="summary_large_image" /> -->
 	<!-- TODO: <meta name="twitter:title" content="Shawn Lee - Software Engineer" /> -->
