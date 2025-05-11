@@ -23,6 +23,9 @@ importers:
       '@unocss/reset':
         specifier: ^66.1.1
         version: 66.1.1
+      lucide-svelte:
+        specifier: ^0.509.0
+        version: 0.509.0(svelte@5.28.2)
       mdsvex:
         specifier: ^0.12.3
         version: 0.12.6(svelte@5.28.2)
@@ -703,6 +706,11 @@ packages:
 
   locate-character@3.0.0:
     resolution: {integrity: sha512-SW13ws7BjaeJ6p7Q6CO2nchbYEc3X3J6WrmTTDto7yMPqVSZTUyY5Tjbid+Ab8gLnATtygYtiDIJGQRRn2ZOiA==}
+
+  lucide-svelte@0.509.0:
+    resolution: {integrity: sha512-6U83jZ0RKvLYLGdx/hTqZyWcquwApQ2Q1E5bKFELXtOw7g8dk1P0qwbAQqs1fqWAtpNevtXTpgShHv/yWAcbjQ==}
+    peerDependencies:
+      svelte: ^3 || ^4 || ^5.0.0-next.42
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
@@ -1584,6 +1592,10 @@ snapshots:
       quansync: 0.2.10
 
   locate-character@3.0.0: {}
+
+  lucide-svelte@0.509.0(svelte@5.28.2):
+    dependencies:
+      svelte: 5.28.2
 
   magic-string@0.30.17:
     dependencies:
