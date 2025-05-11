@@ -9,8 +9,6 @@ export default class PostDAO {
   public static getAll() {
     const paths = import.meta.glob('../post/*.svx', { eager: true })
     
-    console.log(paths);
-
     let postList: Post[] = []
 
     for (const path in paths) {
