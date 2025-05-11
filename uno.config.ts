@@ -13,7 +13,9 @@ export default defineConfig({
 		presetWebFonts({
 			provider: 'fontshare',
 			fonts: {
-				chillax: "Chilax"
+				"nippo": "Nippo",
+        "switzer": "Switzer",
+        "general": "General Sans",
 			}
 		})
 	]
