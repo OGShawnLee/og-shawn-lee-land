@@ -7,6 +7,6 @@
 
 <style>
 	:global(body) {
-		--uno: 'min-h-screen bg-black font-switzer text-#E2CCCC';
+		--uno: 'min-h-screen bg-black font-nippo text-#E2CCCC';
 	}
 </style>

@@ -1,3 +1,7 @@
+<script>
+	import { Technology } from "$lib/components";
+</script>
+
 <svelte:head>
 	<title>Shawn Lee - Software Engineer</title>
 	<meta name="description" content="Shawn Lee's personal website. Software Engineer." />
@@ -27,7 +31,25 @@
 				<strong class="font-medium text-white">Universidad Veracruzana</strong>.
 			</p>
 		</header>
-		<div class="grid gap-3 leading-9">
+		<section class="grid gap-4">
+			<h2 class="sr-only">Technologies</h2>
+			<div class="flex flex-wrap items-center gap-8">
+				<Technology name="C++" type="programming"/>
+				<Technology name="Java" type="programming"/>
+				<Technology name="JavaScript" type="programming"/>
+				<Technology name="Svelte" type="programming" href="https://svelte.dev"/>
+				<Technology name="SvelteKit" type="programming" href="https://svelte.dev" />
+				<Technology name="TypeScript" type="programming" href="https://typescriptlang.org"/>
+				<Technology name="Figma" type="tool" href="https://figma.com" />
+				<Technology name="MySQL" type="db" />
+				<Technology name="PostgreSQL" type="db" />
+				<Technology name="Supabase" type="db" href="https://supabase.com" />
+				<Technology name="GelDB" type="db" href="https://geldata.com" />
+				<Technology name="Vercel" type="hosting" href="https://vercel.com" />
+			</div>
+		</section>
+		<section class="grid gap-4 leading-9">
+			<h2 class="sr-only">About Me</h2>
 			<p>
 				I am a software engineer with a passion for building web applications. I have experience in
 				various programming languages and frameworks, and I enjoy learning new technologies. In my
@@ -47,16 +69,17 @@
         can greatly influence our creativity and productivity, and I strive to create a workspace
         that inspires me to do my best work.
       </p>
-		</div>
-		<div class="flex items-center gap-8">
+		</section>
+		<section class="flex items-center gap-8">
+			<h2 class="sr-only">Contact</h2>
 			<a
-				class="flex items-center gap-2 text-white outline-none border-white hover:text-red-500"
+				class="flex items-center gap-2 text-white hover:text-red-500 transition-colors duration-300"
 				target="_blank"
 				href="https://github.com/OGShawnLee"
 			>
 				<i class="bx bxl-github text-lg"></i>
 				GitHub
 			</a>
-		</div>
+		</section>
 	</div>
 </main>
