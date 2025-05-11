@@ -16,7 +16,7 @@
 </script>
 
 {#if href}
-  <a class="flex items-center gap-2 text-white hover:text-red-500 transition-colors duration-300" {href} target="_blank">
+  <a class="link flex items-center gap-2 text-white" {href} target="_blank">
     <svelte:component this={icons[type]} size={20} />
     <span class="underline underline-offset-6">
       {name}

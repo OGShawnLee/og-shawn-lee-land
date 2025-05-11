@@ -7,6 +7,10 @@ import {
 } from 'unocss';
 
 export default defineConfig({
+	shortcuts: {
+		"link": "hover:text-red-500 transition-colors duration-300",
+		"container": "max-w-2xl mx-auto px-4",
+	},
 	transformers: [transformerDirectives({ applyVariable: '--uno' }), transformerVariantGroup()],
 	presets: [
 		presetWind3(),
