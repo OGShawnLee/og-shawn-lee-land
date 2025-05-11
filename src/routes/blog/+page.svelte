@@ -17,9 +17,12 @@
   <meta property="og:locale" content="en_US" />
 </svelte:head>
 
-<header>
+<hgroup>
 	<h1 class="mb-4 text-4xl text-white font-medium">Blog</h1>
-</header>
+	<p>
+		Check out what I've written over the years and get to know me better.
+	</p>
+</hgroup>
 <div class="grid gap-4">
 	{#each data.postList as post (post.slug)}
 		{@const date = new Date(post.date)}

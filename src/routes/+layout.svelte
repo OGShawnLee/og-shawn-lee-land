@@ -11,6 +11,7 @@
 		<nav class="flex gap-8">
 			<a class="link" href="/">Me</a>
 			<a class="link" href="/blog">Blog</a>
+			<a class="link" href="/project">Project</a>
 		</nav>
 	</div>
 </header>

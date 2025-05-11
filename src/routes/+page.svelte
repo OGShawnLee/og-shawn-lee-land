@@ -1,6 +1,6 @@
 <script>
 	import { APP_SITE_NAME, APP_URL } from '$lib';
-	import { Technology } from '$lib/components';
+	import { GitHubLink, Technology } from '$lib/components';
 </script>
 
 <svelte:head>
@@ -72,12 +72,5 @@
 </section>
 <section class="flex items-center gap-8">
 	<h2 class="sr-only">Contact</h2>
-	<a
-		class="link flex items-center gap-2 text-white"
-		target="_blank"
-		href="https://github.com/OGShawnLee"
-	>
-		<i class="bx bxl-github text-lg"></i>
-		GitHub
-	</a>
+	<GitHubLink path="OGShawnLee" />
 </section>
