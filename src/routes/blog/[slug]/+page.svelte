@@ -40,6 +40,26 @@
       --uno: "relative py-2 lt-sm:(border-l-6 border-stone-900 px-4) sm:after:(content-[''] absolute inset-y-0 w-1.5 -left-8 bg-stone-900)";
     }
 
+    :global(h1, h2, h3) {
+      --uno: "text-white";
+    }
+
+    :global(h2) {
+      --uno: "text-3xl font-medium";
+    }
+
+    :global(h3) {
+      --uno: "text-2xl font-medium";
+    }
+
+    :global(h2) {
+      --uno: "text-3xl font-medium";
+    }
+
+    :global(ol) {
+      --uno: "list-decimal list-inside pl-4";
+    }
+
     :global(em) {
       --uno: "text-lg font-britney"
     }
@@ -47,5 +67,28 @@
     :global(strong) {
       --uno: "text-white font-medium";
     }
+
+    :global(pre) {
+      --uno: "p-6 border-y-2 border-stone-900 leading-normal";
+    }
+
+    :global(code) {
+      --uno: "font-jm text-sm";
+    }
+
+    :global(.highlighted) {
+      width: calc(100% + 48px);
+		  --uno: "-mx-6 px-6 py-0.75 inline-block bg-stone-900/65";
+	  }
+
+    :global(.line-add) {
+      width: calc(100% + 48px);
+		  --uno: "-mx-6 px-6 relative py-0.75 inline-block bg-green-950/35 after:(content-['+'] absolute left-2.25 text-green-500 font-medium)";
+	  }
+    
+    :global(.line-remove) {
+      width: calc(100% + 48px);
+		  --uno: "-mx-6 px-6 relative py-0.75 inline-block bg-red-950/35 after:(content-['-'] absolute left-2.25 text-red-500 font-medium)";
+	  }
   }
 </style>

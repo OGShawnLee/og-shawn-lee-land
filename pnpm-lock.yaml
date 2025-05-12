@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@shikijs/transformers':
+        specifier: ^3.4.0
+        version: 3.4.0
       '@sveltejs/adapter-auto':
         specifier: ^6.0.0
         version: 6.0.0(@sveltejs/kit@2.20.8(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.5(jiti@2.4.2)))(svelte@5.28.2)(vite@6.3.5(jiti@2.4.2)))
@@ -378,6 +381,9 @@ packages:
 
   '@shikijs/themes@3.4.0':
     resolution: {integrity: sha512-YPP4PKNFcFGLxItpbU0ZW1Osyuk8AyZ24YEFaq04CFsuCbcqydMvMUTi40V2dkc0qs1U2uZFrnU6s5zI6IH+uA==}
+
+  '@shikijs/transformers@3.4.0':
+    resolution: {integrity: sha512-GrGaOj1/I6h75IU0VvjdWDpqGCynx0bqHzd1rErBTGxrcmusYIBhrV7aEySWyJ6HHb9figeXfcNxUFS1HKUfBw==}
 
   '@shikijs/types@3.4.0':
     resolution: {integrity: sha512-EUT/0lGiE//7j5N/yTMNMT3eCWNcHJLrRKxT0NDXWIfdfSmFJKfPX7nMmRBrQnWboAzIsUziCThrYMMhjbMS1A==}
@@ -1321,6 +1327,11 @@ snapshots:
 
   '@shikijs/themes@3.4.0':
     dependencies:
+      '@shikijs/types': 3.4.0
+
+  '@shikijs/transformers@3.4.0':
+    dependencies:
+      '@shikijs/core': 3.4.0
       '@shikijs/types': 3.4.0
 
   '@shikijs/types@3.4.0':

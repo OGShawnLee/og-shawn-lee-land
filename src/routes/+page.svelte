@@ -26,7 +26,7 @@
 
 <header>
 	<h1 class="mb-4 text-4xl text-white font-medium">Shawn Lee</h1>
-	<h2 class="mt-2 text-xl font-medium text-white">Software Engineer Undergraduate</h2>
+	<p class="mt-2 text-xl font-medium text-white">Software Engineer Undergraduate</p>
 	<p class="mt-2">
 		Based on <strong class="font-medium text-white">Mexico</strong> and studying at
 		<strong class="font-medium text-white">Universidad Veracruzana</strong>.

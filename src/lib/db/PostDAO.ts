@@ -7,13 +7,14 @@ export type Post = {
 
 export default class PostDAO {
   public static getAll() {
-    const paths = import.meta.glob('../post/*.svx', { eager: true })
+    const paths = import.meta.glob('../post/*.md', { eager: true })
     
     let postList: Post[] = []
 
     for (const path in paths) {
       const file = paths[path]
-      const slug = path.split('/').at(-1)?.replace('.svx', '')
+      console.log(file);
+      const slug = path.split('/').at(-1)?.replace('.md', '')
   
       if (file && typeof file === 'object' && 'metadata' in file && slug) {
         const metadata = file.metadata as Omit<Post, 'slug'>
@@ -29,7 +30,7 @@ export default class PostDAO {
   }
 
   public static async getOne(slug: string) {
-    const data = await import(`../post/${slug}.svx`);
+    const data = await import(`../post/${slug}.md`);
 
     if (data && typeof data === 'object' && 'metadata' in data) {
       const metadata = data.metadata as Omit<Post, 'slug'>

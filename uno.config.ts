@@ -7,6 +7,11 @@ import {
 } from 'unocss';
 
 export default defineConfig({
+	content: {
+		pipeline: {
+			include: ["src/**/*.{html,svelte,svx}"],
+		}
+	},
 	shortcuts: {
 		"link": "hover:text-red-500 transition-colors duration-300",
 		"container": "max-w-2xl mx-auto px-4",
@@ -17,6 +22,9 @@ export default defineConfig({
 		presetWebFonts({
 			provider: 'fontshare',
 			fonts: {
+				"azeret": "Azeret",
+				"jm": "JetBrains Mono",
+				"jetbrains": "Jet Brains Mono",
 				"britney": "Britney",
 				"nippo": "Nippo",
         "switzer": "Switzer",
