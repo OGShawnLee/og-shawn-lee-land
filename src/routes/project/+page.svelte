@@ -4,11 +4,11 @@
 </script>
 
 <svelte:head>
-  <title>Project</title>
+	<title>Project</title>
 	<meta name="description" content="Shawn Lee's projects." />
 	<meta name="author" content="Shawn Lee" />
 	<meta property="og:title" content="Project" />
-	<meta property="og:site_name" content="{APP_SITE_NAME}" />
+	<meta property="og:site_name" content={APP_SITE_NAME} />
 	<meta property="og:description" content="Shawn Lee's projects." />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{APP_URL}/project" />
@@ -17,7 +17,7 @@
 
 <hgroup>
 	<h1 class="mb-4 text-4xl text-white font-medium">Project</h1>
-	<p>Check out the some of the things I've built over the years.</p>
+	<p>Check out some of the things I've built over the years.</p>
 </hgroup>
 <div class="grid gap-12">
 	<Project.Section title="Website">
@@ -26,9 +26,9 @@
 			repository="OGShawnLee/veracruz-inclusivo"
 			website="https://veracruz-inclusivo.vercel.app"
 		>
-			Veracruz Inclusivo es tu puente hacia empresas y organizaciones que realmente creen en el
-			talento de todos. Encuentra el servicio que necesitas o la oportunidad laboral que mereces.
-			Construyendo juntos un Veracruz más justo y equitativo.
+			Veracruz Inclusivo is your bridge to companies and organizations that truly believe in
+			everyone's talent. Find the service you need or the job opportunity you deserve. Building a
+			more just and equitable Veracruz together.
 		</Project.Card>
 	</Project.Section>
 	<Project.Section title="Programming Language">
