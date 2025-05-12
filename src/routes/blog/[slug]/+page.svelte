@@ -35,9 +35,17 @@
 </div>
 
 <style>
-  :global(#content) {
-    :global(h1) {
-      --uno: "text-xl font-medium";
+  #content {
+    :global(blockquote) {
+      --uno: "relative py-2 lt-sm:(border-l-6 border-stone-900 px-4) sm:after:(content-[''] absolute inset-y-0 w-1.5 -left-8 bg-stone-900)";
+    }
+
+    :global(em) {
+      --uno: "text-lg font-britney"
+    }
+
+    :global(strong) {
+      --uno: "text-white font-medium";
     }
   }
 </style>

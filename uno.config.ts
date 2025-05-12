@@ -17,6 +17,7 @@ export default defineConfig({
 		presetWebFonts({
 			provider: 'fontshare',
 			fonts: {
+				"britney": "Britney",
 				"nippo": "Nippo",
         "switzer": "Switzer",
         "general": "General Sans",
