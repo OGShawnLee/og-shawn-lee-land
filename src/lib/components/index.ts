@@ -1,6 +1,7 @@
 import ProjectCard  from './ProjectCard.svelte';
 import ProjectSection  from './ProjectSection.svelte';
 
+export { default as Code } from "./Code.svelte";
 export { default as GitHubLink } from './GitHubLink.svelte';
 export { default as IconLink } from './IconLink.svelte';
 export namespace Project {

@@ -60,6 +60,10 @@
       --uno: "list-decimal list-inside pl-4";
     }
 
+    :global(a) {
+      --uno: "link underline underline-offset-4"
+    }
+
     :global(em) {
       --uno: "text-lg font-britney"
     }
@@ -69,7 +73,7 @@
     }
 
     :global(pre) {
-      --uno: "p-6 border-y-2 border-stone-900 leading-normal";
+      --uno: "p-6 border-2 border-stone-900/65 text-sm leading-relaxed";
     }
 
     :global(code) {
@@ -90,5 +94,10 @@
       width: calc(100% + 48px);
 		  --uno: "-mx-6 px-6 relative py-0.75 inline-block bg-red-950/35 after:(content-['-'] absolute left-2.25 text-red-500 font-medium)";
 	  }
+
+    :global(.error) {
+      width: calc(100% + 48px);
+      --uno: "-mx-6 px-6 relative py-0.75 inline-block !bg-red-950/35 after:(content-['!'] absolute left-2.25 text-red-500 font-medium)";
+    }
   }
 </style>
