@@ -29,7 +29,7 @@
       {DateFormatter.format(date)}
     </time>
   </hgroup>
-  <div class="grid gap-4 leading-9" id="content">
+  <div class="grid gap-4 leading-9 font-general text-stone-200" id="content">
     <data.post.content />
   </div>
 </div>
@@ -37,7 +37,7 @@
 <style>
   #content {
     :global(blockquote) {
-      --uno: "relative py-2 lt-sm:(border-l-6 border-stone-900 px-4) sm:after:(content-[''] absolute inset-y-0 w-1.5 -left-8 bg-stone-900)";
+      --uno: "relative py-2 lt-sm:(border-l-6 border-stone-900 px-4) sm:after:(content-[''] absolute inset-y-0 w-1.5 -left-8 bg-stone-900) whitespace-pre-wrap";
     }
 
     :global(h1, h2, h3) {
